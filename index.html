@@ -1,0 +1,62 @@
+<head>
+    <title>solsort.com</title>
+</head>
+
+<body>{{> body}}</body>
+
+<template name="topbar">
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/"><img class="brandlogo" src="/img/solsort16x16.png"> solsort.com</a>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </a>
+            <div class="pull-right" id="solsortLogin">
+            </div>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    {{#each pages}}
+                    <li {{#if this.active}}class="active"{{/if}}><a href="{{this.url}}">{{this.title}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<template name="body">
+{{> topbar}}
+{{> appPage}}
+</template>
+
+<template name="appPage">
+<div class="container">
+    <h1>Apps</h1>
+    <p>
+        Many of these are experimental and may not work in certain browsers.
+    </p>
+        <div class="row">
+            <ul class="thumbnails">
+                {{#each apps}}
+                <li class="span4">
+                <div class="thumbnail">
+                    <div class="caption">
+                    <a href="{{this.run}}" class="btn btn-primary" style="float:right">Try it!</a> 
+                    <h3>{{this.title}}</h3>
+                    <p>{{this.desc}}</p>
+                    </div>
+                    <img src="/img/app-{{this.name}}.png" width="300" height="200" alt="">
+                </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    </template>
+
+    <template name="landingPage">
+    <div class="hero-unit">
+        <h1>Let's build it</h1>
+    </div>
+    </template>
