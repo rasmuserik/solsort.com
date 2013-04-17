@@ -78,6 +78,5 @@
 
     if Meteor.isServer
         Meteor.startup ->
-            console.log "typeof qp", typeof imgur
             console.log "started"
 ## Util

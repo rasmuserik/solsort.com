@@ -8,17 +8,11 @@
     "basePackages": {
       "qp": {
         "path": "../qp"
-      },
-      "imgur": {
-        "path": "../meteor-imgur"
       }
     },
     "packages": {
       "qp": {
         "path": "../qp"
-      },
-      "imgur": {
-        "path": "../meteor-imgur"
       }
     }
   }
