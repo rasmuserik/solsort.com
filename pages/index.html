@@ -1,0 +1,120 @@
+<head>
+    <title>solsort.com</title>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>{{> body}}</body>
+
+<template name="topbar">
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand"><img class="brandlogo" src="/img/solsort16x16.png"> solsort.com</a>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </a>
+            <div class="pull-right" id="solsortLogin">
+            </div>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    {{#each pages}}
+                    <li {{#if this.active}}class="active"{{/if}}><a href="{{this.url}}">{{this.title}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<template name="body">
+{{> topbar}}
+{{{ content}}}
+<script src="http://solsort.com/_logger.js"></script>
+</template>
+
+<template name="home">
+<div class="container">
+        
+    <h1><!--Together, we create the web/app-->Let's build it <small>-&nbsp;turning&nbsp;your&nbsp;idea into&nbsp;web/app</small>
+        <a href="mailto:letsbuildit@solsort.com" class="btn btn-primary btn-large" style="float:right">Contact</a>
+    </h1>
+    <div style="align: center">
+    </div>
+    <div class="row">
+        <!-- value-proposition per customer target group-->
+        <!-- maybe questions/imagine/... -->
+        <div class="span4">
+            <h3>Business</h3>
+            <ul>
+                <li>improve your workflow</li>
+                <li>access your information on the road</li>
+            </ul>
+        </div>
+        <div class="span4">
+            <h3>Tech</h3>
+            <ul>
+                <li>capacity for web app building</li>
+                <li>knowledge transfer</li>
+            </ul>
+        </div>
+        <div class="span4">
+            <h3>Startup</h3>
+            <ul>
+                <li>turn your idea to the MVP</li>
+            </ul>
+            <h3>Community</h3>
+        </div>
+    </div>
+    <hr>
+
+    <!--
+        - rapid prototyping
+        - open source
+        - careful handover
+        - responsive
+        - other-offerings: development / consulting / talks / teaching
+        - Pricing
+        - what delivered, days on location, prototype / working app
+        - praticalities - pricing, conditions(open source)
+        - other offerings - consulting, teaching, development
+    -->
+
+
+    <div class="row">
+        <div class="span3">
+            <h4>Rapid prototyping</h4>
+            From idea to running app in a week
+            <h4>Any device</h4>
+            ..responsive design...
+        </div>
+
+        <div class="span3">
+            <h4>Open process</h4>
+
+            <h4>Open Source</h4>
+
+            <h4>Documentation</h4>
+
+        </div>
+
+        <div class="span3">
+            <h4>Careful Handover</h4>
+            <p>Training the trainers to implement the app in the organisation</p>
+            <p>Knowledge transfers to developers maintaining or extending the app</p>
+
+            <h4>Optionally Hosted</h4>
+            <p>We can host the app for you, or help you get it set up in your own infrastructure</p>
+
+            <h4>Opinionated</h4>
+
+        </div>
+
+        <div class="span3">
+            <h4>Guarantee</h4>
+            Full refund if you are not happy with the result
+            <h4>More</h4>
+            Computer Science problem solving, software development, talks, and training - also available
+        </div>
+    </div>
+</div>
+</template>

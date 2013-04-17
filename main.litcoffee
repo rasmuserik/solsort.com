@@ -2,15 +2,15 @@
 
     pages = 
         "Home": 
-            url: "/"
+            url: "home"
         "Apps":
-            url: "/apps"
+            url: "apps"
         #"Writings":
-        #    url: "/writings"
+        #    url: "writings"
         #"Images":
-        #    url: "/images"
+        #    url: "images"
         "Rasmus Erik":
-            url: "/rasmuserik"
+            url: "rasmuserik"
 
 
 ## Apps
@@ -44,13 +44,20 @@
 ## Writings
 
     writings = [
-        "techstack"
+        "techstack",
+        "pricingstructure"
     ]
 
 # Code
 
     if Meteor.isClient
-        Template.appPage.rows = -> 
+        Meteor.startup ->
+            console.log "HERE 123"
+
+        Template.body.content = ->
+            Template[location.pathname.slice(1)]?() or Template.home()
+
+        Template.apps.rows = -> 
             result = []
             acc = []
             for key, val of apps
@@ -60,7 +67,6 @@
                     acc = []
                 acc.push val
             result.push {apps: acc}
-            console.log result
             result
 
         Template.topbar.pages = -> 
@@ -70,13 +76,8 @@
                 active: val.url is location.pathname
             result
 
-        Template.hello.greeting = -> "Welcome to solsort.com."
-
-        Template.hello.events
-            'click input': ->
-                console?.log "You pressed the button"
-
     if Meteor.isServer
         Meteor.startup ->
+            console.log "typeof qp", typeof imgur
             console.log "started"
 ## Util
