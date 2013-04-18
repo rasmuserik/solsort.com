@@ -75,7 +75,7 @@
             result = for key, val of pages 
                 title: key
                 url: val.url
-                active: val.url is location.pathname
+                active: val.url is location.pathname.slice(1)
             result
 
     if Meteor.isServer
