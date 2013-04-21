@@ -1,6 +1,6 @@
 <head>
     <title>solsort.com</title>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700|Coming+Soon:400" rel="stylesheet" type="text/css">
 </head>
 
 <body>{{> body}}</body>
@@ -13,11 +13,11 @@
             <!--a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </a-->
             <!--div class="nav-collapse collapse"-->
-                <ul class="nav">
-                    {{#each pages}}
-                    <li {{#if this.active}}class="active"{{/if}}> <a href="{{this.url}}">{{this.title}}</a></li>
-                    {{/each}}
-                </ul>
+            <ul class="nav">
+                {{#each pages}}
+                <li {{#if this.active}}class="active"{{/if}}> <a href="{{this.url}}">{{this.title}}</a></li>
+                {{/each}}
+            </ul>
         </div>
     </div>
 </div>
@@ -33,58 +33,68 @@
 <div class="container">
 
     <h1><!--Together, we create the web/app-->Let's build it together &nbsp; <small>-&nbsp;turning&nbsp;your&nbsp;idea&nbsp;into&nbsp;web/app</small>
-        <a href="mailto:letsbuildit@solsort.com" class="btn btn-primary btn-large" style="float:right">Contact</a>
     </h1>
-    <hr>
+    <hr/>
     <div class="row">
+        <div class="span2"></div>
+        <div class="span8">
+            <div class="landingLetter">
+                <br>
+                Hi solsort.com,<br>
+                I have an idea for a website/app in the area of <input type="text" placeholder="your field">, which I would like help to create.
+                Let's talk it over, please contact me on <input type="email" placeholder="your email">, <br>
+                Greetings,
+                <br> &nbsp; &nbsp; &nbsp; <input type="text" placeholder="your name">
+            </div>
+            <a href="mailto:letsbuildit@solsort.com" class="btn btn-primary btn-large" style="float:right">Contact me</a>
+            <br><br>
+        </div>
+
+        <div class="span2"></div>
+    </div>
+    <div class="row">
+        <hr>
         <!-- value-proposition per customer target group-->
         <!-- maybe questions/imagine/... -->
-        <div class="span6">
-            <h4>Need web/app development?</h4>
-            <ul>
-                <li>Improve your business workflow</li>
-                <li>Access your information on the road</li>
-                <li>Turn your startup idea into the MVP</li>
-                <li>Knowledge transfer to your development team</li>
-            </ul>
-            <br>
-            <div class="row">
-                <div class="span3">
-                    <h4>Open process</h4>
-                    On location building the app with continual feedback from the domain experts
-                    <h4>Open Source</h4>
-                    Free choice of vendors for hosting for adding new features
-                </div>
-                <div class="span3">
-                    <h4>Rapid prototyping</h4>
-                    From idea to running app in typically less than a week
-                    <h4>Social Company</h4>
-                    Good purpose or interesting problems, matters more than economic gain
-                </div>
+        <!-- div class="span6">
+        <h4>Need web/app development?</h4>
+        <ul>
+            <li>Improve your business workflow</li>
+            <li>Access your information on the road</li>
+            <li>Turn your startup idea into the MVP</li>
+            <li>Knowledge transfer to your development team</li>
+        </ul>
+        <br>
+        </div-->
+        <div class="row">
+            <div class="span4">
+                <h4>Rapid prototyping</h4>
+                From idea to running app in typically less than a week
+                <h4>Social Company</h4>
+                Good purpose or interesting problems, matters more than economic gain
+                <h4>Open Source</h4>
+                Free choice of vendors for hosting for adding new features
+                <!--h4>Optionally Hosted</h4>
+            Integrated into your own data center or hosted here, at your choice-->
+            </div>
+            <div class="span4">
+                <h4>Careful Handover</h4>
+                <p>Training the trainers to implement the app in the organisation</p>
+                <p>Knowledge transfers to developers maintaining or extending the app</p>
+                <h4>Documentation</h4>
+                Architecture documented, source code written for reading
+            </div>
+            <div class="span4">
+                <h4>Any device</h4>
+                Responsive design working well across mobiles, tablets, computers, from the beginning
+                <!--h4>Opinionated</h4-->
+                <!--h4>Pricing</h4-->
+                <h4>Guarantee</h4>
+                Full refund if you are not happy with the result
+                <h4>More</h4>
+                Computer Science problem solving, software development, talks, and training - also available
             </div>
         </div>
-
-
-        <div class="span3">
-            <h4>Careful Handover</h4>
-            <p>Training the trainers to implement the app in the organisation</p>
-            <p>Knowledge transfers to developers maintaining or extending the app</p>
-            <h4>Documentation</h4>
-            Architecture documented, source code written for reading
-            <h4>Optionally Hosted</h4>
-            Integrated into your own data center or hosted here, at your choice
-        </div>
-        <div class="span3">
-            <h4>Any device</h4>
-            Responsive design working well across mobiles, tablets, computers, from the beginning
-            <!--h4>Opinionated</h4-->
-            <!--h4>Pricing</h4-->
-            <h4>Guarantee</h4>
-            Full refund if you are not happy with the result
-            <h4>More</h4>
-            Computer Science problem solving, software development, talks, and training - also available
-        </div>
+        <hr/>
     </div>
-    <hr/>
-</div>
-</template>
+    </template>
