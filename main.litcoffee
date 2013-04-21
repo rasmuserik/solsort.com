@@ -26,7 +26,7 @@
             desc: "Logical game, inspired by a card game"
         tsartnoc:
             title: "Tsar Tnoc"
-            run: "http://solsort.com/tsar_tnoc"
+            run: "http://tsartnoc.solsort.com"
             desc: "Result of a ludum dare hackathon."
         blobshot:
             title: "BlobShot"
