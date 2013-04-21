@@ -1,5 +1,3 @@
-# TODO
-
 # Site Structure
 
     pages = 
@@ -53,11 +51,18 @@
 # Code
 
     if Meteor.isClient
-        Meteor.startup ->
-            console.log "HERE 123"
-
         Template.body.content = ->
-            Template[location.pathname.slice(1)]?() or Template.home()
+            Template[location.pathname.slice(1).replace(/[^a-zA-Z0-9].*/, "")]?() or Template.home()
+
+        Template.home.events
+            "click #contactMe": ->
+                obj =
+                    field: $("#yourField").val()
+                    email: $("#yourEmail").val()
+                    name: $("#yourName").val()
+                qp.log "contact me", obj
+                Meteor.call "contactMe", obj
+
 
         Template.apps.rows = -> 
             result = []
@@ -81,4 +86,12 @@
     if Meteor.isServer
         Meteor.startup ->
             console.log "started"
+
+        Meteor.methods
+            contactMe: (obj) ->
+                Email.send
+                    from: "meteor@solsort.com"
+                    to: "rasmuserik@solsort.com"
+                    subject: "solsort.com contact me"
+                    text: JSON.stringify obj
 ## Util
