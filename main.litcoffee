@@ -30,12 +30,12 @@
             desc: "Result of a ludum dare hackathon."
         blobshot:
             title: "BlobShot"
-            run: "http://solsort.com/apps/blobshot"
+            run: "http://blobshot.solsort.com"
             desc: "Result of the 5apps hackathon."
-        dkcities:
-            title: "Danske Byer"
-            run: "http://solsort.com/solsort/#dkcities"
-            desc: 'Learning "game" for the geography of Denmark.'
+        #dkcities:
+        #    title: "Danske Byer"
+        #    run: "http://solsort.com/solsort/#dkcities"
+        #    desc: 'Learning "game" for the geography of Denmark.'
         cuteengine:
             title: "CuteEngine"
             run: "http://solsort.dk/planetcute"
