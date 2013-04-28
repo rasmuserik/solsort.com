@@ -52,7 +52,7 @@
 
     if Meteor.isClient
         Template.body.content = ->
-            Template[location.pathname.slice(1).replace(/[^a-zA-Z0-9].*/, "")]?() or Template.home()
+            Template[location.pathname.slice(1).replace(/[^a-zA-Z0-9-].*/, "")]?() or Template.home()
 
         Template.home.events
             "click #contactMe": ->
