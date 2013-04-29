@@ -20,7 +20,7 @@
         # findaday:
         combigame:
             title: "CombiGame"
-            run: "http://combigame.com"
+            run: "/_/combigame.com"
             desc: "Logical game, inspired by a card game"
         tsartnoc:
             title: "Tsar Tnoc"
@@ -41,7 +41,7 @@
             desc: 'Learning "game" for the geography of Denmark.'
         cuteengine:
             title: "CuteEngine"
-            run: "http://solsort.dk/planetcute"
+            run: "/_/solsort.dk/planetcute"
             desc: "Game engine experiment"
 
 ## Writings
