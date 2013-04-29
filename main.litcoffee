@@ -1,4 +1,4 @@
-# Site Structure
+# ![logo](https://solsort.com/_logo.png) Site Structure
 
     pages = 
         "Home": 
@@ -18,8 +18,6 @@
     apps =
         # timelog:
         # findaday:
-        # notescore:
-        # findaday:
         combigame:
             title: "CombiGame"
             run: "http://combigame.com"
@@ -32,10 +30,15 @@
             title: "BlobShot"
             run: "http://blobshot.solsort.com"
             desc: "Result of the 5apps hackathon."
-        #dkcities:
-        #    title: "Danske Byer"
-        #    run: "http://solsort.com/solsort/#dkcities"
-        #    desc: 'Learning "game" for the geography of Denmark.'
+        notescore:
+            title: "NoteScore"
+            run: "http://old.solsort.com/#notescore"
+            desc: "Note learning app"
+            play: "https://play.google.com/store/apps/details?id=dk.solsort.notescore"
+        dkcities:
+            title: "Danske Byer"
+            run: "http://old.solsort.com/#dkcities"
+            desc: 'Learning "game" for the geography of Denmark.'
         cuteengine:
             title: "CuteEngine"
             run: "http://solsort.dk/planetcute"
@@ -43,10 +46,23 @@
 
 ## Writings
 
-    writings = [
-        "techstack",
-        "pricingstructure"
-    ]
+    writings = 
+        "productivity-hacks":
+            title: "Productivity Hacks"
+        techstack:
+            title: "Technology Stack"
+        codestyle:
+            title: "Coding Guidelines"
+        "pricing-structure":
+            title: "Pricing Structure"
+        "rapport-struktur":
+            title: "Tekststruktur for rapporter"
+            lang: "da"
+        "speech-evaluation":
+            title: "Speech Evaluation Notes"
+        "skrive-tips":
+            title: "Tommelfingerregler for skrivning"
+            lang: "da"
 
 # Code
 
