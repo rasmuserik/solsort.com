@@ -1,4 +1,4 @@
-# Site Structure
+# ![logo](https://solsort.com/_logo.png) Site Structure
 
     pages = 
         "Home": 
