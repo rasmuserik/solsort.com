@@ -18,11 +18,9 @@
     apps =
         # timelog:
         # findaday:
-        # notescore:
-        # findaday:
         combigame:
             title: "CombiGame"
-            run: "http://combigame.com"
+            run: "/_/combigame.com"
             desc: "Logical game, inspired by a card game"
         tsartnoc:
             title: "Tsar Tnoc"
@@ -32,27 +30,45 @@
             title: "BlobShot"
             run: "http://blobshot.solsort.com"
             desc: "Result of the 5apps hackathon."
-        #dkcities:
-        #    title: "Danske Byer"
-        #    run: "http://solsort.com/solsort/#dkcities"
-        #    desc: 'Learning "game" for the geography of Denmark.'
+        notescore:
+            title: "NoteScore"
+            run: "http://old.solsort.com/#notescore"
+            desc: "Note learning app"
+            play: "https://play.google.com/store/apps/details?id=dk.solsort.notescore"
+        dkcities:
+            title: "Danske Byer"
+            run: "http://old.solsort.com/#dkcities"
+            desc: 'Learning "game" for the geography of Denmark.'
         cuteengine:
             title: "CuteEngine"
-            run: "http://solsort.dk/planetcute"
+            run: "/_/solsort.dk/planetcute"
             desc: "Game engine experiment"
 
 ## Writings
 
-    writings = [
-        "techstack",
-        "pricingstructure"
-    ]
+    writings = 
+        "productivity-hacks":
+            title: "Productivity Hacks"
+        techstack:
+            title: "Technology Stack"
+        codestyle:
+            title: "Coding Guidelines"
+        "pricing-structure":
+            title: "Pricing Structure"
+        "rapport-struktur":
+            title: "Tekststruktur for rapporter"
+            lang: "da"
+        "speech-evaluation":
+            title: "Speech Evaluation Notes"
+        "skrive-tips":
+            title: "Tommelfingerregler for skrivning"
+            lang: "da"
 
 # Code
 
     if Meteor.isClient
         Template.body.content = ->
-            Template[location.pathname.slice(1).replace(/[^a-zA-Z0-9].*/, "")]?() or Template.home()
+            Template[location.pathname.slice(1).replace(/[^a-zA-Z0-9-].*/, "")]?() or Template.home()
 
         Template.home.events
             "click #contactMe": ->
