@@ -5,8 +5,8 @@
             url: "home"
         "Apps":
             url: "apps"
-        #"Writings":
-        #    url: "writings"
+        "Writings":
+            url: "writings"
         #"Images":
         #    url: "images"
         "Rasmus Erik":
