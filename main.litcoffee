@@ -18,6 +18,10 @@
     apps =
         # timelog:
         # findaday:
+        dragimation:
+            title: "Dragimation"
+            run: "http://dragimation.solsort.com"
+            desc: "Dragging animation special effect - as requested for the development of legoland billund resort web page."
         combigame:
             title: "CombiGame"
             run: "/_/combigame.com"
