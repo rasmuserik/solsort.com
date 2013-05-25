@@ -3,7 +3,7 @@
     pages = 
         "Home": 
             url: "home"
-        "Apps":
+        "Stuff":
             url: "apps"
         "Writings":
             url: "writings"
@@ -18,6 +18,14 @@
     apps =
         # timelog:
         # findaday:
+        html5cnug:
+            title: "Slides: HTML5"
+            run: "http://rasmuserik.com/html5/cnug2013-slides.html"
+            desc: "Slides for presentation done at CNUG.dk"
+        speeding:
+            title: "Speeding visualisation"
+            run: "http://speeding.solsort.com"
+            desc: "Visualiseringskode for vejdirektoratet - layout baseret på tidligere udgave"
         dragimation:
             title: "Dragimation"
             run: "http://dragimation.solsort.com"
