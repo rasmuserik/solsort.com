@@ -15,66 +15,120 @@
 
 ## Apps
 
-    apps =
-        # timelog:
-        # findaday:
-        html5cnug:
-            title: "Slides: HTML5"
-            run: "http://rasmuserik.com/html5/cnug2013-slides.html"
-            desc: "Slides for presentation done at CNUG.dk"
-        speeding:
-            title: "Speeding visualisation"
-            run: "http://speeding.solsort.com"
-            desc: "Visualiseringskode for vejdirektoratet - layout baseret på tidligere udgave"
-        dragimation:
-            title: "Dragimation"
-            run: "http://dragimation.solsort.com"
-            desc: "Dragging animation special effect - as requested for the development of legoland billund resort web page."
-        combigame:
-            title: "CombiGame"
-            run: "/_/combigame.com"
-            desc: "Logical game, inspired by a card game"
-        tsartnoc:
-            title: "Tsar Tnoc"
-            run: "http://tsartnoc.solsort.com"
-            desc: "Result of a ludum dare hackathon."
-        blobshot:
-            title: "BlobShot"
-            run: "http://blobshot.solsort.com"
-            desc: "Result of the 5apps hackathon."
-        notescore:
-            title: "NoteScore"
-            run: "http://old.solsort.com/#notescore"
-            desc: "Note learning app"
-            play: "https://play.google.com/store/apps/details?id=dk.solsort.notescore"
-        dkcities:
-            title: "Danske Byer"
-            run: "http://old.solsort.com/#dkcities"
-            desc: 'Learning "game" for the geography of Denmark.'
-        cuteengine:
-            title: "CuteEngine"
-            run: "/_/solsort.dk/planetcute"
-            desc: "Game engine experiment"
+    apps = 
+      "Rasmus Erik":
+        link: "http://solsort.com/rasmuserik"
+        desc: "Contact info, and more about the creator of these things"
 
-## Writings
+      html5cnug:
+        title: "Slides: HTML5"
+        date: "2013-05-22"
+        tags: "presentation, html5, cnug"
+        link: "http://rasmuserik.com/html5/cnug2013-slides.html"
+        source: "https://github.com/rasmuserik/app-speeding"
+        desc: "Slides for presentation done at CNUG.dk"
+        time: "3 days study/preparation for presentation, 1 hour presentation"
 
-    writings = 
-        "productivity-hacks":
-            title: "Productivity Hacks"
-        techstack:
-            title: "Technology Stack"
-        codestyle:
-            title: "Coding Guidelines"
-        "pricing-structure":
-            title: "Pricing Structure"
-        "rapport-struktur":
-            title: "Tekststruktur for rapporter"
-            lang: "da"
-        "speech-evaluation":
-            title: "Speech Evaluation Notes"
-        "skrive-tips":
-            title: "Tommelfingerregler for skrivning"
-            lang: "da"
+      speeding:
+        title: "Speeding visualisation"
+        tags: "coffeescript, hammertime, visualisation"
+        date: "2013-05-15"
+        link: "http://speeding.solsort.com"
+        source: "https://github.com/rasmuserik/app-speeding"
+        desc: "Visualiseringskode for vejdirektoratet - layout baseret på tidligere udgave"
+        time: "5 hours trying to optimise original outsourced code, then 10 hours reimplementing it"
+
+      Dragimation:
+        date: "2013-04-30"
+        tags: "coffeescript, hammertime, visualisation, html5"
+        link: "http://dragimation.solsort.com"
+        source: "https://github.com/rasmuserik/app-dragimation"
+        desc: "Dragging animation special effect - as requested for the development of legoland billund resort web page."
+
+      CombiGame:
+        link: "http://solsort.com/_/combigame.com"
+        desc: "Logical game, inspired by a card game"
+        date: "2012-03-26"
+
+      "Tsar Tnoc":
+        link: "http://tsartnoc.solsort.com"
+        desc: "Result of a ludum dare hackathon."
+        date: "2012-07-15"
+
+      BlobShot:
+        link: "http://blobshot.solsort.com"
+        desc: "Result of the 5apps hackathon."
+        date: "2012-05-06"
+
+      NoteScore:
+        desc: "Note learning app"
+        link: "http://old.solsort.com/#notescore"
+        "Android App": "https://market.android.com/details?id=dk.solsort.notescore"
+        Source: "https://github.com/rasmuserik/notescore"
+        date: "2011-08"
+
+      dkcities:
+        title: "Danske Byer"
+        link: "http://old.solsort.com/#dkcities"
+        source: "https://github.com/rasmuserik/dkcities"
+        desc: 'Learning "game" for the geography of Denmark.'
+        date: "2011-08"
+
+      CuteEngine:
+        link: "http://solsort.com/_/solsort.dk/planetcute"
+        Source: "https://github.com/rasmuserik/planetcute"
+        desc: "Game engine experiment"
+        date: "2011-08"
+        time: "3 days"
+
+      "Productivity Hacks":
+        kind: "html"
+        desc: "Notes for a presentation on productivity hacks. Keywords of my aproaches to handle the world."
+        date: "2013-04-30"
+
+      "EuroCards":
+        tags: "card game"
+        link: "http://solsort.com/_/www.thegamecrafter.com/games/EuroCards"
+        desc: "top-trump like card game for learning facts about european countries"
+        date: "2012-06-20"
+
+      "Pricing scale":
+        kind: "html"
+        link: "http://solsort.com/pricing-scale"
+        desc: "Tool for pricing and estimating cost."
+        date: "2013"
+
+      "Skrivetips":
+        kind: "html"
+        lang: "da"
+        link: "http://solsort.com/skrivetips"
+        desc: "Tips / noter om skrivning, herunder også struktur for videnskabelige rapporter. Tips for effective writing (in Danish)."
+        date: "2005"
+
+      "Presentation evaluation notes":
+        kind: "html"
+        link: "http://solsort.com/presentation-evaluation-notes"
+        desc: "Checklist / notes for giving feedback on presentations. Useful for Toastmasters and similar."
+        date: "2012-03-18"
+
+      # Master thesis
+      # sourceforge image transform pocr
+      # lightscript 2
+      # yolan 2
+      # BSc. thesis
+      # Filtering contexts paper
+      # Tempo paper
+      # Poetry
+      # Graphics
+      # Music
+      # Photo albums
+      # Rasmus Erik
+      # CV
+
+    for key, val of apps
+        val.title = key if not val.title
+        val.name = key.toLowerCase().replace(/[^a-z0-9]/g, "-") if not val.name
+        console.log val.name, key
 
 # Code
 
@@ -114,11 +168,10 @@
             console.log err, result
 
 
-        Template.apps.rows = -> 
+        Template.home.rows = -> 
             result = []
             acc = []
             for key, val of apps
-                val.name = key
                 if acc.length is 3
                     result.push {apps: acc}
                     acc = []

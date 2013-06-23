@@ -14,15 +14,7 @@
 <div class="navbar">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand"><img class="brandlogo" src="/img/solsort16x16.png"> solsort.com</a>
-            <!--a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </a-->
-            <!--div class="nav-collapse collapse"-->
-            <ul class="nav">
-                {{#each pages}}
-                <li {{#if this.active}}class="active"{{/if}}> <a href="/{{this.url}}">{{this.title}}</a></li>
-                {{/each}}
-            </ul>
+            <a class="brand" href="/"><img class="brandlogo" src="/img/solsort16x16.png"> solsort.com</a>
         </div>
     </div>
 </div>
@@ -35,6 +27,31 @@
 </template>
 
 <template name="home">
+
+<div class="container">
+    {{#each rows}}
+    <div class="row">
+        {{#each this.apps}}
+        <div class="span4" onclick="location.href='{{this.link}}'">
+            <div class="thumbnail" style="margin-bottom: 3ex">
+                <div class="caption">
+                    <a href="{{this.link}}" class="btn btn-primary" style="float:right">open</a> 
+                    <h3>{{this.title}}</h3>
+                </div>
+
+                <img src="/img/app-{{this.name}}.png" width="300" height="200" alt="">
+                <div class="caption">
+                    <p>{{this.desc}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/each}}
+</div>
+</template>
+
+<template name="oldhome">
 <div class="container">
 
     <h1><!--Together, we create the web/app-->Let's build it together &nbsp; <small>-&nbsp;turning&nbsp;your&nbsp;idea&nbsp;into&nbsp;web/app</small>
@@ -105,4 +122,5 @@
         </div>
         <hr/>
     </div>
-    </template>
+</template>
+
