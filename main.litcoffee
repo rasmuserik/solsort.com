@@ -6,11 +6,10 @@ Personal web site
 
 - restructure into static page, get rid of meteor
 - go through old solsort-repository, and copy stuff that should get public, - remove local repo clone
-- add old stuff
-    - images (gallery generated from yml-file + raw images)
-    - notes/lilypond
-    - thesises
-    - papers
+- add images (gallery generated from yml-file + raw images)
+- add notes/lilypond
+- add thesises
+- add papers
 - semantic markup on rasmuserik.html
 - build/deploy with qp
 - circle-based layout
