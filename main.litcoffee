@@ -1,23 +1,106 @@
-# ![logo](https://solsort.com/_logo.png) Site Structure
+# ![logo](https://solsort.com/_logo.png) www.solsort.com
 
-    pages = 
-        "Home": 
-            url: "home"
-        "Stuff":
-            url: "apps"
-        "Writings":
-            url: "writings"
-        #"Images":
-        #    url: "images"
-        "Rasmus Erik":
-            url: "rasmuserik"
+Personal web site
+
+# Backlog
+
+## solsort.com
 
 
-## Apps
+Fixed menu:
+
+    """
+    Experiments, prototypes, 
+    expressions, creations.
+
+    solsort - web/apps, 
+    and Computer Science
+
+    Rasmus Erik
+    Voel Jensen
+    """
+
+Page content:
+
+    """
+    +----+ +----+ +----+
+    |    | |    | |    | 
+    |    | |    | |    | 
+    +----+ +----+ +----+
+    +----+ +----+ +----+
+    | Entries   | |    | 
+    |    | |   Entries | 
+    +----+ +----+ +----+
+    +----+ +----+ +----+
+    |    | |    | |    | 
+    |    | |    | |    | 
+    +----+ +----+ +----+
+
+    solsort 
+    - creation of html5 web/apps and freelance computer science consulting.
+
+
+    What can I do for you?
+
+    - build html5 web/apps
+    - short projects, prototypes, proof-of-concepts
+    - solve computer science problems, optimise or debug code etc.
+    - network, lets meet for a cup of tea, and get to know eachother 
+
+    Contact me at rasmuserik@solsort.com
+
+    Regularly available in Copenhagen/Malmö, Berlin, Stockholm, Odense, and ...
+
+    Values
+
+    [content from site]
+
+    Rasmus Erik Voel Jensen
+
+    [content from site...]
+    """
+
+
+Entry content:
+
+- title
+- link
+- image 300x200
+- date or year
+- keywords/tags
+- kind of work (code/writings/slides/card game/...)
+- description
+- state (experiment, prototype, in production)
+- extra actions (source code, ...)
+- time estimate
+
+### Old notes
+
+- restructure, with portfolio as main entry
+- /1pomo: go through solsort-repository, and copy stuff that should get public, - remove local repo clone
+- move this tasklist etc. into README.md, when meteor updates
+- person-socnet: lanyrd/meetup, couchsurfing
+- translation: danish+english version
+- semantic markup
+- history-api
+- images page
+- writings-page, markdown or html-pages
+- writings: render template or markdown
+- a/b-testing
+- write: tech-stack (meteorite, literate-coffeescript, travis-ci, npm, ...)
+- write: code guidelines
+- styling
+- internationalisation
+- transfer mail/create web to solsort.com
+- replace contact-mail, with let's meet (finddate or just send message/number for followup)
+
+
+
+# Data for landing page / portfolio
 
     apps = 
       "Rasmus Erik":
-        link: "http://solsort.com/rasmuserik"
+        link: "http://www.solsort.com/rasmuserik"
         desc: "Contact info, and more about the creator of these things"
 
       html5cnug:
@@ -121,6 +204,7 @@
       # Poetry
       # Graphics
       # Music
+      # lilypond nodes
       # Photo albums
       # Rasmus Erik
       # CV
@@ -131,6 +215,17 @@
         console.log val.name, key
 
 # Code
+    pages = 
+        "Home": 
+            url: "home"
+        "Stuff":
+            url: "apps"
+        "Writings":
+            url: "writings"
+        #"Images":
+        #    url: "images"
+        "Rasmus Erik":
+            url: "rasmuserik"
 
     if Meteor.isClient
         Template.body.content = ->
