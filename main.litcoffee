@@ -4,61 +4,20 @@ Personal web site
 
 # Backlog
 
-## solsort.com
-
-
-Fixed menu:
-
-    """
-    Experiments, prototypes, 
-    expressions, creations.
-
-    solsort - web/apps, 
-    and Computer Science
-
-    Rasmus Erik
-    Voel Jensen
-    """
-
-Page content:
-
-    """
-    +----+ +----+ +----+
-    |    | |    | |    | 
-    |    | |    | |    | 
-    +----+ +----+ +----+
-    +----+ +----+ +----+
-    | Entries   | |    | 
-    |    | |   Entries | 
-    +----+ +----+ +----+
-    +----+ +----+ +----+
-    |    | |    | |    | 
-    |    | |    | |    | 
-    +----+ +----+ +----+
-
-    solsort 
-    - creation of html5 web/apps and freelance computer science consulting.
-
-
-    What can I do for you?
-
-    - build html5 web/apps
-    - short projects, prototypes, proof-of-concepts
-    - solve computer science problems, optimise or debug code etc.
-    - network, lets meet for a cup of tea, and get to know eachother 
-
-    Contact me at rasmuserik@solsort.com
-
-    Regularly available in Copenhagen/Malmö, Berlin, Stockholm, Odense, and ...
-
-    Values
-
-    [content from site]
-
-    Rasmus Erik Voel Jensen
-
-    [content from site...]
-    """
+- restructure into static page, get rid of meteor
+- go through old solsort-repository, and copy stuff that should get public, - remove local repo clone
+- add old stuff
+    - images (gallery generated from yml-file + raw images)
+    - notes/lilypond
+    - thesises
+    - papers
+- semantic markup on rasmuserik.html
+- build/deploy with qp
+- circle-based layout
+- add date and state info to entries
+- a/b-testing
+- write: tech-stack (meteorite, literate-coffeescript, travis-ci, npm, ...)
+- write: code guidelines
 
 
 Entry content:
@@ -73,26 +32,6 @@ Entry content:
 - state (experiment, prototype, in production)
 - extra actions (source code, ...)
 - time estimate
-
-### Old notes
-
-- restructure, with portfolio as main entry
-- /1pomo: go through solsort-repository, and copy stuff that should get public, - remove local repo clone
-- move this tasklist etc. into README.md, when meteor updates
-- person-socnet: lanyrd/meetup, couchsurfing
-- translation: danish+english version
-- semantic markup
-- history-api
-- images page
-- writings-page, markdown or html-pages
-- writings: render template or markdown
-- a/b-testing
-- write: tech-stack (meteorite, literate-coffeescript, travis-ci, npm, ...)
-- write: code guidelines
-- styling
-- internationalisation
-- transfer mail/create web to solsort.com
-- replace contact-mail, with let's meet (finddate or just send message/number for followup)
 
 
 
