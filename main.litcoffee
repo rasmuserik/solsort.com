@@ -46,7 +46,7 @@ Entry content:
         tags: "coffeescript, hammertime, gis, leaflet, openstreetmap"
         link: "http://solsort.com:8080/"
         source: "https://github.com/rasmuserik/app-skolevej"
-        desc: "Demo/frontend of editor for save school routes - made for Hammertime / Odense Kommune"
+        desc: "Demo/frontend of editor for safe school routes - made for Hammertime / Odense Kommune"
         time: "24 hrs"
 
       html5cnug:
