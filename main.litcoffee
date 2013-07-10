@@ -41,6 +41,14 @@ Entry content:
         link: "http://www.solsort.com/rasmuserik"
         desc: "Contact info, and more about the creator of these things"
 
+      Skolevej:
+        date: "2013-07-08"
+        tags: "coffeescript, hammertime, gis, leaflet, openstreetmap"
+        link: "http://solsort.com:8080/"
+        source: "https://github.com/rasmuserik/app-skolevej"
+        desc: "Demo/frontend of editor for save school routes - made for Hammertime / Odense Kommune"
+        time: "24 hrs"
+
       html5cnug:
         title: "Slides: HTML5"
         date: "2013-05-22"
