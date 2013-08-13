@@ -41,6 +41,12 @@ Entry content:
         link: "http://www.solsort.com/rasmuserik"
         desc: "Contact info, and more about the creator of these things"
 
+      BibGraph:
+        date: "2013-08-02"
+        tags: "coffeescript, dbc, adhl, d3, visualisation, graph"
+        link: "http://bibgraph.solsort.com/"
+        desc: "Visualisation of relations between books and other library materials, generated from the ADHL statistics about danish co-loans"
+
       Skolevej:
         date: "2013-07-08"
         tags: "coffeescript, hammertime, gis, leaflet, openstreetmap"
