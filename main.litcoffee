@@ -41,6 +41,13 @@ Entry content:
         link: "http://www.solsort.com/rasmuserik"
         desc: "Contact info, and more about the creator of these things"
 
+      "Summer Hacks":
+        title: "Slides: Summer Hacks"
+        date: "2013-08-14"
+        tags: "copenhagenjs, talk, presentation, bibgraph, skolevej"
+        link: "http://solsort.com/summerhacks"
+        desc: "Slides for presentation at CopenhagenJS on various summer hacks: BibGraph and Skolevej"
+
       BibGraph:
         date: "2013-08-02"
         tags: "coffeescript, dbc, adhl, d3, visualisation, graph"
